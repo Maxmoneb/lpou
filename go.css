@@ -1,0 +1,218 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+ 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+html{
+scroll-behavior: smooth;
+}
+body{
+background-color: white;
+margin: 0px;
+font-family: Poppins;
+color: black;
+
+
+}
+
+::-webkit-scrollbar {
+width: 2px;
+
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+background-color: white;
+overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+float: left;
+display: block;
+color: black;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 30px;
+font-weight: 300;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+background-color: #ddd;
+color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+background-color: white;
+color: black;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 1000px) {
+.topnav a:not(:first-child) {display: none;}
+.topnav a.icon {
+  float: right;
+  display: block;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 300;
+}
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 1000px) {
+.topnav.responsive {position: relative;}
+.topnav.responsive a.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.topnav.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+}
+
+
+.animation{
+height: auto;
+background-color: white;
+position: relative;
+overflow: hidden;
+}
+.paper-plane{
+position: absolute;
+top: 5%;
+left: 0%;
+}
+#plane{
+width: 60px;
+height: auto;
+animation: mymove 5s infinite;
+}
+@keyframes mymove {
+50% {transform: rotate(180deg);}
+}
+
+
+
+
+
+.divcpol{
+width: 100%;
+height: 400px;
+background-color: white;
+display: flex;
+}
+.dicolp1{
+width: 50%;
+height: 400px;
+background-color: white;
+color: black;
+font-size: 60px;
+font-weight: 900;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+}
+#mockup{
+width: 100%;
+height: 100%;
+object-fit: contain;
+}
+
+
+
+.button{
+width: 100px;
+height: 50px;
+background-color: rgb(255, 59, 59);
+border-radius: 10px;
+font-size: 17px;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+}
+
+
+
+
+
+.whatalldiv{
+padding-left: 10px;
+width: auto;
+height: 100px;
+background-color: white;
+color: black;
+font-size: 100px;
+font-family: 'Bebas Neue', sans-serif;
+}
+
+.whatalldiv{
+animation: yuo linear both;
+animation-timeline: view();
+animation-range: entry 10% cover 50%;
+
+}
+@keyframes yuo {
+from{
+  opacity: 0;
+
+}
+
+to{
+  opacity: 1;
+}
+}
+
+.servicesdiv{
+margin-top: 30px;
+width: 100%;
+height: auto;
+background-color: black;
+display: flex;
+overflow: auto;
+gap:20px;
+
+}
+
+
+.gfyt{
+margin-top: 30px;
+width: 100%;
+height: 600px;
+background-color: black;
+}
+
+.nout{
+min-width: 350px;
+height: 350px;
+background-color: whitesmoke;
+}
+
+
+
+
+
